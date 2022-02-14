@@ -20,5 +20,40 @@
         echo "I'm " . $about_me["first_name"] . " " . $about_me["last_name"] . " " . "and I'm " . $about_me["age"] . " years old!";
     ?>
 
+    <?php 
+
+    
+    class Car {
+        public $name;
+        public $mark;
+        
+        function set_name($name) {
+            $this->name = $name;
+        }
+        function set_mark($mark) {
+            $this->mark = $mark;
+        }
+
+        function get_name() {
+            return 'Hello, I am ' . $this->name;
+        }
+
+        function get_mark() {
+            return ' and my mark is ' . $this->mark;
+        }
+    }
+
+    $car1 = new Car();
+    $car2 = new Car();
+    
+    $car1->set_name('Volvo');
+    $car2->set_name('Opel');
+    $car2->set_mark('Corsa');
+
+    echo $car2->get_name();
+    echo $car2->get_mark();
+    
+    ?>
+
 </body>
 </html>
