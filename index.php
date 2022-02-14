@@ -52,6 +52,8 @@
 
     echo $car2->get_name();
     echo $car2->get_mark();
+    echo "\n";
+    var_dump($car1 instanceof Car);
     
     ?>
 
