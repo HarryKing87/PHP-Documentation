@@ -71,5 +71,4 @@ echo $something1->greetCar() . "\n";
 $car2 = new BMW("BMW", 18500);
 echo $car2->getBrand() . " " . $car2->getPrice() . "$" . " and " . $car2->getService() . "!";
 
-
 ?>
