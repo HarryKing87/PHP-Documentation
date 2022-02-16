@@ -1,4 +1,9 @@
 <?php
+
+// We create abstract classes when we like to have one parent class that we DON'T want to be instantiated
+// and so only its child classes will be instantiated.
+
+
 // Parent class
 abstract class Car {
   public $name;
