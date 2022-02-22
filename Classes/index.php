@@ -6,3 +6,4 @@ class Beverage {
 $tea = new Beverage;
 $tea -> temperature = "hot";
 echo $tea->temperature;
+?>
