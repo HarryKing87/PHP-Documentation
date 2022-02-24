@@ -13,6 +13,10 @@ if (!$database) {
     echo "Database opened successfully!\n";
 }
 
+// Below we create the exact SQL code to be taken directly from the database.
+// Specifically, the variable $createTable will be executed directly from line 
+// 29 with the exec() function
+
 $createTable =<<<EOF
 CREATE TABLE COMPANY
 (ID INT PRIMARY KEY     NOT NULL,
@@ -23,6 +27,8 @@ SALARY         REAL);
 EOF;
 
 $result = $database->exec($createTable);
+
+// If the result doesn't exist or is false then it throws an error.
 
 if (!$result) {
     echo $database->lastErrorMsg();
